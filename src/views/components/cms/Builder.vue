@@ -18,7 +18,8 @@
                 v-for="(block, block_key) in filteredBlocks"
                 :key="block_key"
                 class="px-5 py-8 md:p-10 text-inherit relative md:w-1/2"
-                :class="'bg-' + block.background + ' lg:w-1/' + _columns"
+                :class="'lg:w-1/' + _columns"
+                :style="'background:' + block.background"
             >
                 <div>
                     <!-- Arrow/Eye section -->
@@ -233,11 +234,11 @@ export default {
     data() {
         return {
             colors: {
-                red: "red-500",
-                purple: "purple-500",
-                pink: "pink-500",
-                blue: "blue-500",
-                yellow: "yellow-500",
+                red: "#ef4444;",
+                purple: "#8b5cf6;",
+                pink: "#ec4899;",
+                blue: "#3b82f6;",
+                yellow: "#f59e0b;",
             },
             urlTypes: {
                 internal: "internal",
