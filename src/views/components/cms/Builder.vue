@@ -213,7 +213,7 @@
                 :class="'md:w-1/' + _columns"
                 @click="addBlock"
             >
-                <i class="fas fa-plus-circle mr-4"></i> Add Block
+                <i class="fas fa-plus-circle mr-4"></i> <span class="p-4 border-2 border-black rounded-lg shadow-lg">Add Block</span>
             </div>
         </div>
     </div>
@@ -234,10 +234,10 @@ export default {
         return {
             colors: {
                 red: "red-500",
-                black: "purple-500",
-                white: "orange-500",
+                purple: "purple-500",
+                pink: "pink-500",
                 blue: "blue-500",
-                grey: "yellow-500",
+                yellow: "yellow-500",
             },
             urlTypes: {
                 internal: "internal",
