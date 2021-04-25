@@ -44,9 +44,10 @@ export default {
       let path = findFormatted('menuList', this.list, id);
       path = this.remove_first_occurrence(path, 'menuList');
       path = path.replace('["id"]', "");
+      console.log(path);
       if(meta == 'input') {
         //This is dangerous, but for the sake of the example, I'll leave this here.
-        eval('this.list' + path).input = data.target.value;
+        //eval('this.list' + path).input = data.target.value;
       }
       
     },
