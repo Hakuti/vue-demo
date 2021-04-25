@@ -2,6 +2,7 @@ import { createWebHistory, createRouter } from "vue-router";
 import Home from "@/views/pages/Home.vue";
 import NotFound from "@/views/pages/404.vue";
 import NewTemplate from "@/views/pages/NewTemplate.vue";
+import Menu from "@/views/pages/Menu.vue"
 // import axios from "axios";
 
 const routes = [
@@ -17,6 +18,11 @@ const routes = [
     meta: {
       title: 'Create a new page',
     }
+  },
+  {
+    path: "/menu-builder",
+    name: "menu-builder",
+    component: Menu
   },
   {
     path: '/:catchAll(.*)',
